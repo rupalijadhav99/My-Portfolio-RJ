@@ -1,0 +1,85 @@
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+
+/* View My Work Button */
+.view-work-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #23738a;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-work-btn:hover {
+  background:#23738a;
+  transform: scale(1.1);
+}
+
+/* Scroll Down Section */
+.scroll-down-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-text {
+  font-size: 18px;
+}
+
+.scrollDownDiv{
+  display: flex;
+  align-items: center;
+  color: #23738a;
+}
+
+.mouse-icon {
+  width: 24px;
+  height: 40px;
+  border: 2px solid #23738a;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 5px;
+}
+
+.scroll-wheel {
+  width: 6px;
+  height: 10px;
+  background-color: black;
+  border-radius: 4px;
+  animation: scrollAnimation 1.5s infinite ease-in-out;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.scroll-down-container:hover {
+  opacity: 0.7;
+}
+

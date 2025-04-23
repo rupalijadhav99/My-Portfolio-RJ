@@ -1,0 +1,81 @@
+.project-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1a1a1a;
+}
+
+.project-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projectCardsDiv {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.purple {
+  color: #23738a;
+}
+
+.project-card {
+  margin-bottom: 20px;
+  width: 85%;
+  height: 85vh;
+}
+
+.project-card-view {
+  border: 1px solid #23738a;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  padding: 2rem;
+  height: 75vh;
+}
+
+.project-card-view:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(168, 85, 247, 0.2);
+}
+
+button {
+  margin-top: 10px;
+}
+
+.card-body {
+  font-size: 14px;
+}
+
+.card-title {
+  font-size: 16px;
+  color: #23738a;
+  font-weight: bold;
+}
+
+.gitDemo{
+    height: 25px;
+    width: 80px;
+    background: #c9e0e7;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.gitDemoDiv{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gitDemo a{
+    color: #1a5e71;
+    text-decoration: none;
+}
+
+.gitDemo svg{
+    margin-top: 2px;
+}
