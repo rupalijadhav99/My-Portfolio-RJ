@@ -1,28 +1,40 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { motion } from "framer-motion";
 import "./Projects.css";
 
-function ProjectCard({ title, description, features, technologies, ghLink, demoLink }) {
-    return (
-      <Card className="project-card-view">
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text style={{ textAlign: "justify" }}>{description}</Card.Text>
-          <ul>
-            {features.map((feature, idx) => (
-              <li key={idx}>{feature}</li>
-            ))}
-          </ul>
-          <p>
-            <strong>Technologies Used:</strong> {technologies.join(", ")}
-          </p>
-          
-        </Card.Body>
-      </Card>
-    );
-  }
+function ProjectCard({ name, description, features, technologies }) {
+  return (
+    <motion.div
+      className="enhanced-card"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
+      <h2 className="project-title">{name}</h2>
 
-export default ProjectCard
+      <div className="project-section">
+        <h3 className="section-heading">Description:</h3>
+        <p className="section-content">{description}</p>
+      </div>
+
+      <div className="project-section">
+        <h3 className="section-heading">Key Features:</h3>
+        <ul className="section-content">
+          {features.map((feature, idx) => (
+            <li key={idx}>
+              <span className="star-icon">⭐</span> {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="project-section">
+        <h3 className="section-heading">Technologies Used:</h3>
+        <p className="tech-list">{technologies.join(", ")}</p>
+      </div>
+    </motion.div>
+  );
+}
+
+export default ProjectCard;

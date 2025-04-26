@@ -1,0 +1,128 @@
+.experience-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+}
+
+.experience-heading {
+  font-size: 2.5rem;
+  color: #23738a;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-bottom: 4px solid #facc15;
+  padding-bottom: 0.5rem;
+}
+
+.experience-card {
+  padding: 2rem;
+  border-left: 5px solid #facc15;
+  border-radius: 10px;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+/* --- New Top Section --- */
+.experience-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.experience-text {
+  flex: 1;
+  text-align: right;
+}
+
+.experience-logo-wrapper {
+  padding: 10px 0px;
+  border-radius: 8px;
+}
+
+.experience-logo {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* --- Other sections --- */
+.experience-content {
+  margin-bottom: 2rem;
+}
+
+.experience-title {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.experience-company {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #23738a;
+  margin-top: 0.5rem;
+}
+
+.experience-location {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+.experience-dates {
+  font-weight: bold;
+  color: #facc15;
+}
+
+.experience-details {
+  text-align: left;
+}
+
+.experience-subheading {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.experience-list li {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.experience-list li:hover {
+  background: #fef9c3;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .experience-card {
+    padding: 1.5rem;
+  }
+
+  .experience-top-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-logo-wrapper {
+    margin-top: 1rem;
+  }
+}

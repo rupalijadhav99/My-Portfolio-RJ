@@ -13,6 +13,10 @@ const Footer = () => {
         </a>
         <a href="https://www.naukri.com/mnjuser/profile" target="_blank" rel="noopener noreferrer">
           Naukri        </a>
+
+          <a href="mailto:jadhavrupali106@gmail.com" target="_blank" rel="noopener noreferrer">
+             Email
+           </a>
       </div>
       <p>&copy; {new Date().getFullYear()} Rupali Jadhav. All rights reserved.</p>
     </footer>

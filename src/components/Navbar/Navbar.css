@@ -1,104 +1,111 @@
-/* Navbar container */
+/* Container to center the navbar like in home-container */
 .navbar-container {
-  width: 100%;
+  width: 66.5%;
   display: flex;
   justify-content: center;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Main Navbar */
+/* Navbar styles */
 .navbar {
-    background: #212121;
-    height: 75px;
-    display: flex;
+    width: auto;
+    display: fle;
+    height: 50px;
+    padding: 10px 0;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    width: 83.4%;
-    padding: 0px 3px;
-    position: fixed;
-    z-index: 999999;
-    background: white;
-    color: #23738a;
 }
 
-#home{
-  margin-top: 5rem;
-}
-
-/* Menu Icon for Mobile */
+/* Menu icon (hamburger/close) */
 .menu-icon {
   display: none;
+  color: #111827;
   cursor: pointer;
-  color: white;
 }
 
-/* Navbar Links */
+/* Nav links styles */
 .nav-links {
   display: flex;
+  gap: 0.5rem;
   list-style: none;
-  padding: 0;
   margin: 0;
-  gap: 2rem;
+  padding: 0;
 }
 
-/* Navbar items */
-.nav-links li {
-  margin: 0 1rem;
-}
-
-/* Buttons and Links */
-.nav-links button,
-.nav-links button a {
+.nav-links li button {
   background: none;
   border: none;
-  color: rgb(119, 119, 121);
-  font-size: 1.2rem;
+  color: #6b7280;
+  font-size: 1rem;
   cursor: pointer;
-  text-decoration: none;
-  padding: 10px;
+  padding: 0.5rem;
 }
 
-.nav-links button.active{
-    color: #23738a;
-    font-weight: bold;
-    background: #23738a24;
-    border-radius: 8px;
-    border: 1px solid #23738a;
+.nav-links li button.active {
+  color: #23738a;
+  font-weight: 600;
+  border-radius: 0.5rem;
 }
 
-.nav-links button:hover,
+.nav-links li button:hover,
 .nav-links .btn.PrimaryBtn:hover {
-  color: white;
+  color: #111827;
 }
 
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
+/* Resume button */
+.resumeButton a {
+  text-decoration: none;
+  color: #23738a;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.resumeButton a:hover {
+  background-color: #facc15;
+  color: #23738a;
+  border-color: transparent;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
   .menu-icon {
     display: block;
+    z-index: 10001;
   }
 
   .nav-links {
+    flex-direction: column;
     position: fixed;
     top: 0;
     right: -100%;
-    height: 60vh;
-    width: 150px;
-    background-color: rgba(0, 0, 0, 0.9);
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
     justify-content: center;
+    align-items: center;
+    gap: 2rem;
     transition: right 0.3s ease-in-out;
+    z-index: 10000;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
   }
 
   .nav-links.active {
     right: 0;
   }
 
-  .nav-links li {
-    margin: 10px 0;
+  .nav-links li button {
+    font-size: 1.5rem;
+    color: #111827;
   }
 
-  .nav-links button {
-    font-size: 1.5rem;
-    color: white;
+  .resumeButton a {
+    font-size: 1.2rem;
   }
 }

@@ -1,0 +1,129 @@
+.about-container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  color: #23738a;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  border-bottom: 4px solid #facc15;
+  padding-bottom: 0.5rem;
+}
+
+.about-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.about-left {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+  margin-bottom: 10%;
+}
+
+.yellow-bg {
+  background-color: #facc15;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.about-right {
+  flex: 2;
+  text-align: left;
+}
+
+.about-content {
+  padding: 0rem 2rem;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+}
+
+
+.yellow-bg-about {
+  position: absolute;
+  width: 380px;
+  height: 420px;
+  background-color: #facc15;
+  border-radius: 50% 40% 60% 30% / 60% 50% 40% 50%;
+  z-index: 0;
+  filter: blur(10px);
+  transform: rotate(-15deg);
+  box-shadow: 0 10px 30px rgba(250, 204, 21, 0.3);
+  animation: floatY 6s ease-in-out infinite;
+}
+
+/* Floating animation for a subtle movement */
+@keyframes floatY {
+  0%, 100% {
+    transform: rotate(-15deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(-15deg) translateY(10px);
+  }
+}
+
+
+.profile-img-about {
+  position: relative;
+  z-index: 1;
+  width: 370px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-left, .about-right {
+    max-width: 100%;
+  }
+
+  .about-content {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .profile-img,
+  .yellow-bg {
+    width: 200px;
+    height: 200px;
+  }
+}
