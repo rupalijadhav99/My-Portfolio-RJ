@@ -15,45 +15,30 @@ const projects = [
       "Leave Management: Integrated leave requests and approval system.",
     ],
     technologies: ["React.js", "Bootstrap", "Redux", "REST API"],
+    imageUrl: "/images/hrms.jpg", // <-- Add some sample image
   },
   {
     name: "Onboarding Portal",
-    description: "Developed a complete onboarding portal for organizations using Eclipse JSP pages. Implemented features like requisition forms, job title and description management, job seeker profiles, interview scheduling, and feedback submission.",
+    description: "Developed a complete onboarding portal for organizations using Eclipse JSP pages...",
     features: [
       "Requisition: Created a form for managers to initiate hiring.",
       "Job Seeker Profile: Designed a profile management system.",
       "Interview Scheduling: Implemented a module for scheduling and tracking interviews.",
       "Feedback System: Developed a feedback form with rating and comments.",
     ],
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "JSP",
-      "Bootstrap",
-      "MySQL",
-      "Java",
-    ],
+    technologies: ["HTML", "CSS", "JavaScript", "jQuery", "JSP", "Bootstrap", "MySQL", "Java"],
+    imageUrl: "/images/onboarding.jpg",
   },
   {
     name: "Leave Management System",
-    description: "Designed a portal for maintaining employee leave details with an intuitive UI, real-time validations, and history tracking.",
+    description: "Designed a portal for maintaining employee leave details with an intuitive UI...",
     features: [
       "Apply Leave: Developed a submodule with date picker functionality.",
       "Sandwich Policy Validations: Added frontend validations to ensure compliance with company policies.",
       "Leave History: Created a module to display detailed leave history.",
     ],
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "JSP",
-      "Bootstrap",
-      "MySQL",
-      "Java",
-    ],
+    technologies: ["HTML", "CSS", "JavaScript", "jQuery", "JSP", "Bootstrap", "MySQL", "Java"],
+    imageUrl: "/images/leave.jpg",
   },
 ];
 

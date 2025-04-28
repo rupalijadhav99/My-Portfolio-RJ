@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 75%;
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
 
 .experience-text {
   flex: 1;
-  text-align: right;
+  text-align: right; /* <<< keep it for desktop */
 }
 
 .experience-logo-wrapper {
@@ -111,18 +111,56 @@
   background: #fef9c3;
 }
 
-/* Mobile Responsive */
+/* --- Mobile Responsive --- */
 @media screen and (max-width: 768px) {
   .experience-card {
-    padding: 1.5rem;
+    padding-right: 0rem!important;
+    width: 100%;
+    border-left: 3px solid #facc15;
   }
 
   .experience-top-section {
     flex-direction: column;
-    text-align: center;
+    text-align: center; /* Center the top section */
+    align-items: center;
   }
 
   .experience-logo-wrapper {
+    margin-bottom: 1rem; /* Add spacing below logo */
+  }
+
+  .experience-text {
+    text-align: center; /* <<< IMPORTANT: Center text on mobile */
     margin-top: 1rem;
   }
+
+  .experience-details {
+    text-align: center; /* Center responsibilities title */
+  }
+
+  .experience-list {
+    align-items: center; /* Center list items */
+  }
+
+  .experience-list li {
+    width: 100%;
+    text-align: left; /* Keep text inside list left aligned for better readability */
+    padding-left: 0.5rem;
+    padding-right: 0rem;
+  }
+  .experience-container{
+    margin-right: 0 !important;
+    margin-left: 0.5rem;
+    width: 90%;
+  }
+  .experience-heading {
+    margin-left: 2.5rem;
+  }
 }
+
+@media (max-width: 600px) {
+  #experience {
+      width: 100%;
+  }
+}
+;

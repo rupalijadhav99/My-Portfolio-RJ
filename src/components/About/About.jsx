@@ -4,7 +4,6 @@ import "./About.css";
 import profileImage2 from "../../assets/rupaliJadhav.jpg";
 
 const About = () => {
-
   return (
     <section id="about" className="about-container">
       <motion.h1

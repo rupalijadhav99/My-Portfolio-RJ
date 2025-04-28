@@ -5,6 +5,8 @@
   align-items: center;
   text-align: center;
   width: 80%;
+  max-width: 1200px;
+  padding: 1rem;
 }
 
 .skills-heading {
@@ -23,6 +25,7 @@
   border-radius: 10px;
   transition: box-shadow 0.3s ease;
   width: 100%;
+  max-width: 900px; /* added for better centering */
 }
 
 .skills-intro {
@@ -67,8 +70,35 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
+  .skills-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .skills-card {
+    padding: 1.5rem;
+    width: 100%;
+    border-left: 3px solid #facc15;
+    border-right: 3px solid #facc15;
+  }
+
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
+    justify-items: center; /* CENTER grid items */
+  }
+
+  .skill-item {
+    width: 100%;
+    max-width: 120px; /* limit item width */
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
   }
 }

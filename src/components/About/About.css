@@ -1,9 +1,12 @@
+/* Main container */
 .about-container {
   margin: 0 auto;
   width: 80%;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Improved font family */
 }
 
+/* Heading styling */
 .about-heading {
   font-size: 2.5rem;
   color: #23738a;
@@ -11,30 +14,27 @@
   font-weight: bold;
   border-bottom: 4px solid #facc15;
   padding-bottom: 0.5rem;
-  display: inline-block; /* Ensure it doesn't stretch full width */
+  display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
-  /* Adjust the heading for mobile */
+  /* Mobile-specific styling for the heading */
   .about-heading {
     font-size: 2rem;
-    width: 100%; 
+    width: 100%;
   }
 
+  /* Adjust content wrapper on mobile */
   .about-content-wrapper {
     flex-direction: column;
     align-items: center;
   }
 
-  .about-left, .about-right {
+  /* Adjust the layout of the left and right content */
+  .about-left,
+  .about-right {
     max-width: 100%;
     text-align: center;
-    margin-left: -7%;
-  }
-
-  .about-content {
-    padding: 1.5rem;
-    font-size: 1rem;
   }
 
   /* Adjust profile image and yellow background for mobile */
@@ -49,6 +49,16 @@
     width: 250px;
     height: 250px;
   }
+
+  /* Adjust text and paragraph styling */
+  .about-content {
+    padding: 0rem!important;
+    font-size: 1rem;
+    text-align: justify; /* Justified text for better readability */
+  }
+  .about-left{
+    margin-left: -10%;
+  }
 }
 
 .about-content-wrapper {
@@ -59,49 +69,12 @@
   flex-wrap: wrap;
 }
 
+/* Left section styling */
 .about-left {
   position: relative;
   flex: 1;
   max-width: 300px;
   margin-bottom: 10%;
-}
-
-.yellow-bg {
-  background-color: #facc15;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.profile-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  position: relative;
-  z-index: 2;
-}
-
-.about-right {
-  flex: 2;
-  text-align: left;
-}
-
-.about-content {
-  padding: 0rem 2rem;
-  line-height: 1.8;
-  color: #333;
-  font-size: 1.1rem;
-  border-radius: 10px;
-  transition: box-shadow 0.3s ease;
-}
-
-.about-content p {
-  margin-bottom: 1.5rem;
 }
 
 .yellow-bg-about {
@@ -119,7 +92,7 @@
   display: flex;
 }
 
-/* Floating animation for a subtle movement */
+/* Floating animation for the yellow background */
 @keyframes floatY {
   0%, 100% {
     transform: rotate(-15deg) translateY(0px);
@@ -129,6 +102,7 @@
   }
 }
 
+/* Profile image styling */
 .profile-img-about {
   position: relative;
   z-index: 1;
@@ -137,4 +111,22 @@
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-right {
+  flex: 2;
+  text-align: justify;
+}
+
+.about-content {
+  padding: 0rem 2rem;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
 }

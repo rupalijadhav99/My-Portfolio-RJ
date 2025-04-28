@@ -18,8 +18,13 @@ export default function Home() {
           developing responsive, scalable, and maintainable applications.
         </p>
         <div className="buttons">
-          <button className="btn-primary">Projects</button>
-          <button className="btn-secondary">LinkedIn</button>
+          <button className="btn-primary"> <a href="https://www.naukri.com/mnjuser/profile" target="_blank" rel="noopener noreferrer">
+          Naukri</a></button>
+          <button className="btn-secondary"><a
+              href="https://www.linkedin.com/in/rupali-jadhav-uidev12"
+              target="_blank"
+              rel="noopener noreferrer"
+            >LinkedIn</a></button>
         </div>
       </div>
 
