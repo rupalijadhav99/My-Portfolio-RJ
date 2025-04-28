@@ -11,8 +11,7 @@ function ProjectCard({ name, description, features, technologies, imageUrl }) {
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-    >
+      viewport={{ once: true }}>
       <div className="card-content">
         {/* Left side (Project name and button) */}
         <div className="left-section">
