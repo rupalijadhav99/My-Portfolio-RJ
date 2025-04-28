@@ -9,7 +9,7 @@ const Navbar = ({ currentSection, onSectionChange }) => {
 
   const handleNavClick = (section) => {
     onSectionChange(section);
-    setMenuOpen(false); // Close menu after selection
+    setMenuOpen(false); // Close menu after selecting a link
   };
 
   return (
@@ -52,17 +52,15 @@ const Navbar = ({ currentSection, onSectionChange }) => {
               Contact
             </button>
           </li>
-          <li>
-            <button className={`resumeButton ${currentSection === "resume" ? "active" : ""}`}>
-              <a
-                className="btn PrimaryBtn"
-                href="https://aqua-odille-52.tiiny.site/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </a>
-            </button>
+          <li className="resumeButton">
+            <a
+              className="btn PrimaryBtn"
+              href="https://aqua-odille-52.tiiny.site/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
           </li>
         </ul>
       </nav>

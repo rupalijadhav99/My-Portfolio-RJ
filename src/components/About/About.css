@@ -11,13 +11,51 @@
   font-weight: bold;
   border-bottom: 4px solid #facc15;
   padding-bottom: 0.5rem;
+  display: inline-block; /* Ensure it doesn't stretch full width */
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust the heading for mobile */
+  .about-heading {
+    font-size: 2rem;
+    width: 100%; 
+  }
+
+  .about-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-left, .about-right {
+    max-width: 100%;
+    text-align: center;
+    margin-left: -7%;
+  }
+
+  .about-content {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Adjust profile image and yellow background for mobile */
+  .profile-img-about,
+  .yellow-bg-about {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Adjust the floating yellow background */
+  .yellow-bg-about {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .about-content-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
@@ -66,18 +104,19 @@
   margin-bottom: 1.5rem;
 }
 
-
 .yellow-bg-about {
   position: absolute;
-  width: 380px;
-  height: 420px;
+  width: 350px;
+  height: 360px;
   background-color: #facc15;
-  border-radius: 50% 40% 60% 30% / 60% 50% 40% 50%;
+  border-radius: 50%;
   z-index: 0;
   filter: blur(10px);
-  transform: rotate(-15deg);
   box-shadow: 0 10px 30px rgba(250, 204, 21, 0.3);
   animation: floatY 6s ease-in-out infinite;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 /* Floating animation for a subtle movement */
@@ -90,40 +129,12 @@
   }
 }
 
-
 .profile-img-about {
   position: relative;
   z-index: 1;
-  width: 370px;
-  height: 370px;
+  width: 350px;
+  height: 360px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .about-heading {
-    font-size: 2rem;
-  }
-
-  .about-content-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-left, .about-right {
-    max-width: 100%;
-  }
-
-  .about-content {
-    padding: 1.5rem;
-    font-size: 1rem;
-  }
-
-  .profile-img,
-  .yellow-bg {
-    width: 200px;
-    height: 200px;
-  }
 }

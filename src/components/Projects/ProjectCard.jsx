@@ -14,7 +14,6 @@ function ProjectCard({ name, description, features, technologies }) {
       <h2 className="project-title">{name}</h2>
 
       <div className="project-section">
-        <h3 className="section-heading">Description:</h3>
         <p className="section-content">{description}</p>
       </div>
 

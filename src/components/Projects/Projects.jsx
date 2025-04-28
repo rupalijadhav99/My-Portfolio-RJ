@@ -6,6 +6,17 @@ import "./Projects.css";
 
 const projects = [
   {
+    name: "Human Resource Management System",
+    description: "Built a comprehensive Human Resource Management System handling onboarding to offboarding processes, ensuring seamless employee management.",
+    features: [
+      "Employee Onboarding: Developed a guided onboarding process.",
+      "Timesheet Management: Implemented a module for employees to log working hours.",
+      "Shift Management: Designed an interactive shift scheduling system.",
+      "Leave Management: Integrated leave requests and approval system.",
+    ],
+    technologies: ["React.js", "Bootstrap", "Redux", "REST API"],
+  },
+  {
     name: "Onboarding Portal",
     description: "Developed a complete onboarding portal for organizations using Eclipse JSP pages. Implemented features like requisition forms, job title and description management, job seeker profiles, interview scheduling, and feedback submission.",
     features: [
@@ -43,17 +54,6 @@ const projects = [
       "MySQL",
       "Java",
     ],
-  },
-  {
-    name: "HRMS (React.js)",
-    description: "Built a comprehensive Human Resource Management System handling onboarding to offboarding processes, ensuring seamless employee management.",
-    features: [
-      "Employee Onboarding: Developed a guided onboarding process.",
-      "Timesheet Management: Implemented a module for employees to log working hours.",
-      "Shift Management: Designed an interactive shift scheduling system.",
-      "Leave Management: Integrated leave requests and approval system.",
-    ],
-    technologies: ["React.js", "Bootstrap", "Redux", "REST API"],
   },
 ];
 

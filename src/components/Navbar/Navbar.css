@@ -14,12 +14,12 @@
 
 /* Navbar styles */
 .navbar {
-    width: auto;
-    display: fle;
-    height: 50px;
-    padding: 10px 0;
-    justify-content: space-between;
-    align-items: center;
+  width: auto;
+  display: flex;
+  height: 50px;
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Menu icon (hamburger/close) */
@@ -75,6 +75,12 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
+  .navbar-container {
+    width: auto;
+    left: 1rem;
+    transform: none;
+  }
+
   .menu-icon {
     display: block;
     z-index: 10001;
@@ -85,15 +91,16 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 100%;
+    width: 70%; /* 👈 instead of 100% */
     height: 100vh;
     background-color: #ffffff;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding: 1rem;
     transition: right 0.3s ease-in-out;
     z-index: 10000;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.15);
   }
 
   .nav-links.active {
