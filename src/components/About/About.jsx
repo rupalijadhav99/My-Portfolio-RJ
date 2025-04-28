@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./About.css";
+import profileImage2 from "../../assets/rupaliJadhav.jpg";
 
 const About = () => {
+
   return (
     <section id="about" className="about-container">
       <motion.h1
@@ -23,7 +25,7 @@ const About = () => {
         <div className="about-left">
           <div className="yellow-bg-about"></div>
           <img
-            src="src/assets/rupaliJadhav.jpg" // update path if needed
+            src={profileImage2} 
             alt="Rupali Jadhav"
             className="profile-img-about"
           />

@@ -1,21 +1,34 @@
 import React from "react";
 import "./Skills.css";
 import { motion } from "framer-motion";
+import HTML from "../../assets/html5.svg";
+import CSS from "../../assets/css.svg";
+import javascript from "../../assets/javascript.svg";
+import reactJS from "../../assets/react.svg";
+import jQuery from "../../assets/jquery.svg";
+import redux from "../../assets/redux.svg";
+import bootstrap from "../../assets/bootstrap.svg";
+import api from "../../assets/api.svg";
+import git from "../../assets/git.svg";
+import canvas from "../../assets/canvas.svg";
+import ajax from "../../assets/ajax.svg";
+import agGridTable from "../../assets/ag_grid_table.svg";
+import kendo from "../../assets/kendo.svg";
 
 const skills = [
-  { name: "HTML", image: "src/assets/html5.svg" },
-  { name: "CSS", image: "src/assets/css.svg" },
-  { name: "JavaScript", image: "src/assets/javascript.svg" },
-  { name: "React.js", image: "src/assets/react.svg" },
-  { name: "jQuery", image: "src/assets/jquery.svg" },
-  { name: "Redux", image: "src/assets/redux.svg" },
-  { name: "Bootstrap", image: "src/assets/bootstrap.svg" },
-  { name: "RESTful APIs", image: "src/assets/api.svg" },
-  { name: "Git & GitHub", image: "src/assets/git.svg" },
-  { name: "Canvas", image: "src/assets/canvas.svg" },
-  { name: "Ajax", image: "src/assets/ajax.svg" },
-  { name: "AG Grid Table", image: "src/assets/ag_grid_table.svg" },
-  { name: "Kendo", image: "src/assets/kendo.svg" },
+  { name: "HTML", image: HTML },
+  { name: "CSS", image: CSS },
+  { name: "JavaScript", image: javascript },
+  { name: "React.js", image: reactJS },
+  { name: "jQuery", image: jQuery },
+  { name: "Redux", image: redux },
+  { name: "Bootstrap", image: bootstrap },
+  { name: "RESTful APIs", image: api },
+  { name: "Git & GitHub", image: git },
+  { name: "Canvas", image: canvas },
+  { name: "Ajax", image: ajax },
+  { name: "AG Grid Table", image: agGridTable },
+  { name: "Kendo", image: kendo },
 ];
 
 const Skills = () => {

@@ -1,7 +1,9 @@
 import React from 'react';
 import './Home.css';
+import profileImage from "../../assets/rupaliJ.jpg"
 
 export default function Home() {
+
   return (
     <div className="home-container">
       <div className="home-left">
@@ -23,7 +25,7 @@ export default function Home() {
 
       <div className="home-right">
         <div className="yellow-bg"></div>
-        <img src="src/assets/rupaliJ.jpg" alt="Rupali Jadhav" className="profile-img" />
+        <img src={profileImage} alt="Rupali Jadhav" className="profile-img" />
       </div>
     </div>
   );
