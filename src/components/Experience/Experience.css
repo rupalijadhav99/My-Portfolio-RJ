@@ -18,7 +18,9 @@
 
 .experience-card {
   padding: 2rem;
+  padding-right: 1rem;
   border-left: 5px solid #facc15;
+  border-right: 5px solid #facc15;
   border-radius: 10px;
   width: 100%;
   transition: box-shadow 0.3s ease;
@@ -114,7 +116,8 @@
 /* --- Mobile Responsive --- */
 @media screen and (max-width: 768px) {
   .experience-card {
-    padding: 1rem!important;
+    padding: 1rem;
+    padding-right: 0.8rem;
     width: 100%;
     border-left: 3px solid #facc15;
     border-right: 3px solid #facc15;
@@ -152,7 +155,7 @@
   .experience-container{
     margin-right: 0 !important;
     margin-left: 0.5rem;
-    width: 90%;
+    width: 95%;
   }
   .experience-heading {
     margin-left: 0.5rem;

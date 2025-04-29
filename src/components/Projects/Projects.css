@@ -1,15 +1,15 @@
 .new-card-layout {
-  padding-left: 1rem;
-  display: flex;
-  background-color: #f4f7fa;
-  border-left: 5px solid #23738a;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  margin: 1rem;
-  width: 80%; 
-  height: 370px; 
-  flex-direction: row; 
-  justify-content: space-between;
+  padding-left: 1rem!important;
+  display: flex!important;
+  background-color: #f4f7fa!important;
+  border-left: 5px solid #23738a!important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1)!important;
+  border-radius: 12px!important;
+  margin: 1rem!important;
+  width: 80%!important; 
+  height: 370px!important; 
+  flex-direction: row!important; 
+  justify-content: space-between!important;
 }
 
 .card-content {
