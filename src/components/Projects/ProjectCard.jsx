@@ -19,7 +19,7 @@ function ProjectCard({ name, description, features, technologies, imageUrl }) {
             className="view-project-btn"
             onClick={() => setShowDetails(!showDetails)}
           >
-            {showDetails ? "Hide Details" : "View Project"}
+            {showDetails ? "Hide Details" : "View Details"}
           </button>
         </div>
 
