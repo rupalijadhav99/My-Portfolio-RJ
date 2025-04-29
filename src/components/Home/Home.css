@@ -11,7 +11,7 @@
 /* Link styles inside buttons */
 button a{
   text-decoration: none;
-  color: #494b50;
+  color: #23738a;
 }
 
 /* Media query for desktop layout */
@@ -175,4 +175,19 @@ button a{
   .intro-title {
     font-size: 2rem!important;
   }
+}
+
+/* Link inside button styled as flex row */
+.btn-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #23738a;
+  font-weight: 600;
+}
+
+/* Optional: style icons */
+.btn-icon {
+  font-size: 1.1rem;
 }

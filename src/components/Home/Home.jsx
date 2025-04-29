@@ -1,9 +1,9 @@
 import React from 'react';
 import './Home.css';
-import profileImage from "../../assets/rupaliJ.jpg"
+import profileImage from "../../assets/rupaliJ.jpg";
+import { FaLinkedin, FaBriefcase } from "react-icons/fa";
 
 export default function Home() {
-
   return (
     <div className="home-container">
       <div className="home-left">
@@ -18,13 +18,28 @@ export default function Home() {
           developing responsive, scalable, and maintainable applications.
         </p>
         <div className="buttons">
-          <button className="btn-primary"> <a href="https://www.naukri.com/mnjuser/profile" target="_blank" rel="noopener noreferrer">
-          Naukri</a></button>
-          <button className="btn-secondary"><a
+          <button className="btn-primary">
+            <a
+              href="https://www.naukri.com/mnjuser/profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-link"
+            >
+              <FaBriefcase className="btn-icon" />
+              Naukri
+            </a>
+          </button>
+          <button className="btn-secondary">
+            <a
               href="https://www.linkedin.com/in/rupali-jadhav-uidev12"
               target="_blank"
               rel="noopener noreferrer"
-            >LinkedIn</a></button>
+              className="btn-link"
+            >
+              <FaLinkedin className="btn-icon" />
+              LinkedIn
+            </a>
+          </button>
         </div>
       </div>
 
