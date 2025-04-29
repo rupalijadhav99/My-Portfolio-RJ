@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
-import "./Projects.css";
+
 import hrms from "../../assets/hrms.jpg";
 import lms from "../../assets/lms.png";
 import onboarding from "../../assets/onboarding.jpg";

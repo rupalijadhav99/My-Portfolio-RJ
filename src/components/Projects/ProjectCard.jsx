@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import "./Projects.css";
 
 function ProjectCard({ name, description, features, technologies, imageUrl }) {
   const [showDetails, setShowDetails] = useState(false);
