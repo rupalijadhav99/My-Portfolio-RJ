@@ -58,6 +58,12 @@
   color: #111827;
 }
 
+.resumeButton{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 /* Resume button */
 .resumeButton a {
   text-decoration: none;
