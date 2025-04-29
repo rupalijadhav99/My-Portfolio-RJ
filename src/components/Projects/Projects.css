@@ -1,3 +1,10 @@
+
+.card-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 .new-card-layout {
   padding-left: 1rem;
   display: flex;
@@ -11,12 +18,6 @@
   display: flex;
   flex-direction: row; 
   justify-content: space-between;
-}
-
-.card-content {
-  display: flex;
-  width: 100%;
-  height: 100%;
 }
 
 .left-section {
