@@ -114,9 +114,10 @@
 /* --- Mobile Responsive --- */
 @media screen and (max-width: 768px) {
   .experience-card {
-    padding-right: 0rem!important;
+    padding: 1rem!important;
     width: 100%;
     border-left: 3px solid #facc15;
+    border-right: 3px solid #facc15;
   }
 
   .experience-top-section {
@@ -154,7 +155,7 @@
     width: 90%;
   }
   .experience-heading {
-    margin-left: 2.5rem;
+    margin-left: 0.5rem;
   }
 }
 

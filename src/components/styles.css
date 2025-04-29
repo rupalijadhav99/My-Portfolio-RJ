@@ -132,7 +132,7 @@ html::-webkit-scrollbar {
 /* Responsive Design */
 @media (max-width: 600px) {
   section {
-      width: 90%;
+      width: 100%;
   }
   nav button {
       font-size: 0.9rem;

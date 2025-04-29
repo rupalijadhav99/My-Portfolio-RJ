@@ -3,6 +3,9 @@ import { Container, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import "./Projects.css";
+import hrms from "../../assets/hrms.jpg";
+import lms from "../../assets/lms.png";
+import onboarding from "../../assets/onboarding.jpg";
 
 const projects = [
   {
@@ -15,7 +18,7 @@ const projects = [
       "Leave Management: Integrated leave requests and approval system.",
     ],
     technologies: ["React.js", "Bootstrap", "Redux", "REST API"],
-    imageUrl: "/images/hrms.jpg", // <-- Add some sample image
+    imageUrl: hrms, 
   },
   {
     name: "Onboarding Portal",
@@ -27,7 +30,7 @@ const projects = [
       "Feedback System: Developed a feedback form with rating and comments.",
     ],
     technologies: ["HTML", "CSS", "JavaScript", "jQuery", "JSP", "Bootstrap", "MySQL", "Java"],
-    imageUrl: "/images/onboarding.jpg",
+    imageUrl: onboarding,
   },
   {
     name: "Leave Management System",
@@ -38,7 +41,7 @@ const projects = [
       "Leave History: Created a module to display detailed leave history.",
     ],
     technologies: ["HTML", "CSS", "JavaScript", "jQuery", "JSP", "Bootstrap", "MySQL", "Java"],
-    imageUrl: "/images/leave.jpg",
+    imageUrl: lms,
   },
 ];
 
